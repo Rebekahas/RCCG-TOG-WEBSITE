@@ -535,6 +535,7 @@ main button:hover {
     font-weight: 300;
     font-size: 1vw;
 
+    transition: ease-in-out 0.2s;
 }
 
 #join #buttons button:hover {
@@ -542,12 +543,11 @@ main button:hover {
 }
 
 #join #buttons button+button {
-
-
     margin-right: 0;
     margin-left: 30%;
     background-color: #F8F8F8;
     color: black;
+    transition: ease-in-out 0.2s;
 }
 
 #join #buttons button+button:hover {
@@ -595,16 +595,15 @@ main button:hover {
 
 #membership h3 span {
     position: relative;
-    top: 2px;
+    top: 0.4px;
 }
 
+
+
 #photos {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    /* justify-content: space-evenly; */
-    flex-wrap: wrap;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     margin-right: 0;
     margin-left: 5%;
     width: 90%;
@@ -618,7 +617,7 @@ main button:hover {
     flex-direction: column;
     justify-content: flex-end;
 
-    height: 50%;
+    /* height: 50%; */
     border: solid white 0.5px;
     border-radius: 10px;
     box-shadow: inset;
@@ -628,10 +627,6 @@ main button:hover {
     margin-bottom: 5%;
 
     padding-left: 2%;
-    /* padding-top: 0%;
-    padding-bottom: 0%; */
-
-    /* padding-bottom: 0; */
     color: white;
     transition: ease-in-out 0.2s;
 }
@@ -649,11 +644,14 @@ main button:hover {
 .ministries:nth-of-type(3) {
     background-image: url("Images/Teens.png");
     background-size: cover;
+    margin-bottom: 0%;
 }
 
 .ministries:nth-of-type(4) {
     background-image: url("Images/Child.png");
     background-size: cover;
+    margin-bottom: 0%;
+
 }
 
 .ministries h5 {
