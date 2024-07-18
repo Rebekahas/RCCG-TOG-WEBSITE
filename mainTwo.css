@@ -471,8 +471,10 @@ main button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     background-color: #F8F8F8;
-
+    margin: 0;
+    padding: 0;
     padding: 5% 5%;
 }
 
@@ -509,10 +511,15 @@ main button:hover {
 
 }
 
-#join button {
+#join #buttons {
+    margin: 0;
     display: flex;
     flex-direction: row;
-    flex-basis: auto;
+}
+
+#join #buttons button {
+
+    /* flex-basis: auto; */
 
     border: black solid 1px;
     background-color: black;
@@ -521,33 +528,34 @@ main button:hover {
     padding: 10% 50%;
     margin-right: 30%;
     margin-left: 0;
+    margin-bottom: 0;
 
     text-wrap: nowrap;
     font-family: "Poppins";
     font-weight: 300;
-    font-size: 1em;
+    font-size: 1vw;
 
 }
 
-#join button:hover {
+#join #buttons button:hover {
     background-color: #0C2D57;
 }
 
-#join button+button {
+#join #buttons button+button {
 
 
     margin-right: 0;
     margin-left: 30%;
-    /* padding: 10% 60%; */
     background-color: #F8F8F8;
     color: black;
 }
 
-#join button+button:hover {
+#join #buttons button+button:hover {
     background-color: #efefef;
 }
 
 #membership {
+    margin-top: 0;
     background-color: #0C2D57;
     display: flex;
     padding: 5%;
